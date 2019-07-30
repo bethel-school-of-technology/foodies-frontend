@@ -10,16 +10,21 @@ export class ApiService {
   query: string; 
   id: any;
 
-  constructor(public http: HttpClient) {
+  constructor(public http: HttpClient  ) {
    
   }
-    getApi(query): Observable<object>  {
+    getApi(query) {
       this.query = query;
-      return this.http.get(`https://www.food2fork.com/api/search?key=5abf056d45968ce652cd61e5b6ae9184&q=${this.query}`);
+      return this.http.get(`https://www.food2fork.com/api/search?key=74d38d0a5f3d2ced267a3a9ae92dbfba&q=${this.query}`);
     };
     getRecipe(id) {
       this.id = id;
-      return this.http.get(`https://www.food2fork.com/api/get?key=5abf056d45968ce652cd61e5b6ae9184&rId=${this.id}`);  
+      return this.http.get(`https://www.food2fork.com/api/get?key=74d38d0a5f3d2ced267a3a9ae92dbfba&rId=${this.id}`);  
     };
+
   
 }
+
+//6b4f5e2ad750427b0bd7975a74d2df3b
+//78d3ca6d7259b4a1df14f968a8a47482
+//74d38d0a5f3d2ced267a3a9ae92dbfba

@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap');
+
+
 .search {
     background-color: #fff;
     border-radius: 10rem;
@@ -19,8 +23,8 @@
         outline: none; }
       .search__field::placeholder {
         color: #DAD0CC; }
-
-        .btn, .btn-small, .btn-small:link, .btn-small:visited {
+        
+       /*  .btn, .btn-small, .btn-small:link, .btn-small:visited {
             background-image: linear-gradient(to right bottom, rgb(247, 247, 247), rgb(67, 102, 214));
             border-radius: 10rem;
             border: none;
@@ -35,7 +39,7 @@
             .btn:focus, .btn-small:focus {
               outline: none; }
             .btn > *:first-child, .btn-small > *:first-child {
-              margin-right: 1rem; }
+              margin-right: 1rem; } */
           
           .btn {
             padding: 1.3rem 3rem;
@@ -43,7 +47,19 @@
             .btn svg {
               height: 2.25rem;
               width: 2.25rem;
-              fill: currentColor; }
+              fill: currentColor;
+              padding-bottom: 20%; 
+            }
+            .btn-default {
+              color: rgb(6, 7, 14);
+              background: transparent;
+              border: 3px solid rgb(53, 82, 175);
+              cursor: pointer;
+              border-radius: 20px;
+              font-weight: bold;
+              opacity: .65;
+              background: #fff
+          }
           
           .btn-small, .btn-small:link, .btn-small:visited {
             font-size: 1.3rem;
@@ -99,3 +115,108 @@
               transform: translateY(0); }
             .btn-tiny:not(:last-child) {
               margin-right: .3rem; }
+
+  
+              
+
+
+
+              
+
+              h1 {font-size: 2.4rem;margin-bottom: 30px;}
+              .bg-blue {background-color:#007EDB;}
+              /* .navbar-brand img { height:30px; } */
+              .navbar-dark .navbar-nav .nav-link {color:#fff;}
+              .navbar-dark .navbar-nav .active .nav-link {color:#fff;}
+              /* .banner img {width:100%;} */
+              .blog-box {text-align: center; margin-bottom: 20px;} */
+              
+              
+              .blog-box h3 { margin:20px 0; font-size:25px; color:rgb(236, 236, 236); font-family: 'Crimson Text', serif;}
+              h3 {
+                color: #F2EFEE;
+                font-family: 'Kaushan Script', cursive;
+              }
+              .blog-box p { color:rgb(255, 255, 255); }
+              .blog-box span, .posted-on span { font-style: italic; color:rgb(255, 255, 255); }
+              .blog-box img { 
+                  width: 90%;
+                  height: 180px; 
+                  border-radius: 150px;
+                  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+              } 
+              .blog-box {
+                  animation-duration: 3s;
+                  animation-name: slidein;
+                  
+                }
+                
+                 @keyframes slidein {
+                  from {
+                    margin-left: 100%;
+                    width: 100%;
+                    
+                  }
+                
+                  to {
+                    margin-left: 0%;
+                    width: 100%;
+                
+                  }
+                } 
+              
+              
+              
+              
+              .mtb-40 { margin:40px 0; min-height:450px;}
+              .banner-box {position: relative;}
+              .intro-text { width:100%; position: absolute; top:30%; text-align: center; color:#fff;}
+              .intro-text-box { width: 62%;margin: auto;background-color: rgba(96, 96, 96, 0.6);padding: 20px;border: 10px solid #808080;}
+              .intro-text-box h1 {font-size:3em;}
+              
+              .blog-right h3 {background-color:#000;color: #fff; padding:5px 15px;font-size:20px;}
+              .detail-img {margin:40px 0px;}
+              .rb-box-img { margin-right:15px; }
+              .rb-box-img img { width:100px}
+              .rb-box {display: flex;}
+              .rb-box-desc h4 {font-size:20px;color:#000;font-weight: 600;}
+              .rb-box-desc p {color:#666;}
+              .rb-box {margin-bottom:10px;}
+              .recent-post a:hover {text-decoration: none;}
+              .recent-post a:hover h4 {color:#007EDB;}
+              
+              .categories {margin-top:20px;}
+              .categories ul {padding:0;margin:0; list-style: none;}
+              .categories ul li { border-bottom:1px dotted #ccc; padding:5px 0px; }
+              .categories ul li a {color:#333; display: block;}
+              .categories ul li a:hover {color:#007EDB; text-decoration: none;}
+              .body-content { min-height:380px; }
+              .error-404 { text-align: center; }
+              .error-404 h1{ font-size:10em; }
+              .service-error {text-align:center; padding:50px 0;}
+              .service-error h1 { font-size: 3em;text-transform: uppercase;color:#007EDA;}
+              
+              /*Admin*/
+              
+              .login-box {box-shadow: 1px 1px 7px #666;padding:20px;margin-top:10%;}
+              .login-box h1 {font-size:24px;text-align: center;margin-bottom: 20px}
+              .dash-left ul {padding:0;margin:0;list-style:none;}
+              .dash-left ul li { background-color: #f1f1f1; margin-bottom:5px;}
+              .dash-left ul li a {color:#333; padding:5px 15px; display: block;}
+              .dash-left ul li:hover a {background-color:#007EDB; text-decoration: none; color:#fff;}
+              .dash-left ul li a.active {background-color:#007EDB; color:#fff;}
+              .dash-header {display:flex; justify-content: space-between;}
+              .table img { width:80px; }
+              
+              footer {background-color: #000;color:#fff; padding:20px;} 
+              
+              /*validation*/
+              
+             .ng-valid[required], .ng-valid.required {border: 1px solid #42A948;}
+              .error {color:#ff0000;}
+              .success { color:green; }
+              .contact-message { text-align: center; }
+              
+              @media (max-width: 767px) {
+              .intro-text {display: none;}
+              } 

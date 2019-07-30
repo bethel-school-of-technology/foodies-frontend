@@ -1,9 +1,36 @@
+@import url(https://fonts.googleapis.com/css?family=Pacifico&display=swap);
+
+
 html, body {
     height: 100%;
     width: 100%;
 }
 
-
+h2{
+    color: white;
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+    font-size: 3em;
+    padding-top: 15%;
+  }
+  h2 {
+    animation-duration: 2s;
+    animation-name: slidein; 
+    
+    
+  }
+  
+   @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 100%; 
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  } 
 
 .navbar {
     float: left;
@@ -33,14 +60,38 @@ html, body {
     color: rgb(84, 86, 92);
 }
 
-#home {
+/* home {
     background: url(https://www.flavcity.com/wp-content/uploads/2018/05/healthy-meal-prep-recipes.jpg);
     display: table;
     height: 400px;
     position: center;
     width: 100%;
     
-}
+} */
+#home {
+    display: table;
+    height: 400px;
+    position: center;
+    width: 100%;
+    
+} 
+
+[class*=underlay] {
+    left: 0;
+    min-height: 100%;
+    min-width: 100%;
+    position: fixed;
+    top: 0;
+  }
+  .underlay-photo {
+    background: url('https://foodrevolution.org/wp-content/uploads/2018/10/blog-featured-thanksgiving-20181029-3.jpg');
+    background-size: cover;
+    z-index: -1;
+  }
+  .underlay-black {
+    background: rgba(116, 116, 116, 0.7);
+    z-index: -1;
+  }
 
 .landing-text {
     display: table-cell;
